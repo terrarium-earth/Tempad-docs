@@ -6,7 +6,7 @@
                  name="Help Instance"
                  start-page="Default-topic.md">
 
-    <toc-element topic="fuel-options.md">
+    <toc-element topic="Fuel-options.md">
         <toc-element topic="Energy.md"/>
         <toc-element topic="Fluid.md"/>
         <toc-element topic="Item.md"/>

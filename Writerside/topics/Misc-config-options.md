@@ -2,7 +2,7 @@
 
 This page explains the config options in the `tempad.jsonc` file in the `config` folder of your minecraft instance that
 don't define the fuel options for the tempad. If you want to learn about the fuel options, go to
-[Fuel options page](fuel-options.md).
+[Fuel options page](Fuel-options.md).
 
 distanceFromPlayer
 : Type: Integer
