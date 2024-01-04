@@ -20,7 +20,7 @@ Fuel type
 : Type: String
 : This is the type of fuel the tempad uses. The default for the normal tempad is `tempad:timer`. The default for the
 advanced tempad is `tempad:unlimted`.
-```jsonc
+```json
 {
     "timedoorFuelType": "tempad:timer", // Normal tempad
     "advancedTimedoorFuelType": "tempad:unlimited" // Advanced tempad
@@ -31,7 +31,7 @@ Fuel amount
 : Type: Integer
 : This is the amount of fuel the tempad uses. This value may or may not be used, and has different meanings depending
 on the fuel type. The default for the normal tempad is 180. The default for the advanced tempad is 1.
-```jsonc
+```json
 {
     "timedoorFuelAmount": 180, // Normal tempad
     "advancedTimedoorFuelAmount": 1 // Advanced tempad
@@ -42,7 +42,7 @@ Fuel capacity
 : Type: Integer
 : This is the amount of fuel the tempad can hold. This value may or may not be used, and has different meanings
 depending on the fuel type. The default for the normal tempad is 1000. The default for the advanced tempad is 1000.
-```jsonc
+```json
 {
     "timedoorFuelCapacity": 1000, // Normal tempad
     "advancedTimedoorFuelCapacity": 1000 // Advanced tempad

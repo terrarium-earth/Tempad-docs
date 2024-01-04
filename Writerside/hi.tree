@@ -3,9 +3,10 @@
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
 
 <instance-profile id="hi"
-                 name="Help Instance"
-                 start-page="Default-topic.md">
+                 name="Tempad Documentation"
+                 start-page="Tempad.md">
 
+    <toc-element topic="Tempad.md"/>
     <toc-element topic="Fuel-options.md">
         <toc-element topic="Energy.md"/>
         <toc-element topic="Fluid.md"/>
