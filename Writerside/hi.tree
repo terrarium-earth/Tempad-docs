@@ -17,4 +17,5 @@
         <toc-element topic="Timer.md"/>
     </toc-element>
     <toc-element topic="Misc-config-options.md"/>
+    <toc-element topic="1-19-and-Earlier.md"/>
 </instance-profile>
