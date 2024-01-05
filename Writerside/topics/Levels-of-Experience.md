@@ -1,6 +1,6 @@
 # Levels of Experience
 
-Setting the fuel option for the tempad to be **`tempad:experience_level`** will make the Tempad use the levels of experience
+Setting the fuel option for the tempad to be **`tempad:experience_levels`** will make the Tempad use the levels of experience
 fuel option.
 
 The levels of experience option makes the Tempad consume experience levels from the player's experience bar upon opening a time door, 
@@ -13,7 +13,7 @@ which is set by the fuel amount. Fuel capacity is ignored.
 
 ### Fuel type
 
-The fuel type is the type of fuel the Tempad uses. The fuel type for the levels of experience option is **`tempad:experience_level`**.
+The fuel type is the type of fuel the Tempad uses. The fuel type for the levels of experience option is **`tempad:experience_levels`**.
 
 ### Fuel amount
 
@@ -25,7 +25,7 @@ The fuel amount is the amount of fuel the Tempad uses. The fuel amount for the l
 ### Normal tempad
 ```json
 {
-    "timedoorFuelType": "tempad:experience_level",
+    "timedoorFuelType": "tempad:experience_levels",
     "timedoorFuelAmount": 2
 }
 ```
@@ -33,7 +33,7 @@ The fuel amount is the amount of fuel the Tempad uses. The fuel amount for the l
 ### Advanced tempad
 ```json
 {
-    "advancedTimedoorFuelType": "tempad:experience_level",
+    "advancedTimedoorFuelType": "tempad:experience_levels",
     "advancedTimedoorFuelAmount": 2
 }
 ```
