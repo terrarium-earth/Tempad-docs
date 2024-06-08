@@ -8,11 +8,6 @@ on:
   # Specify to run a workflow manually from the Actions tab on GitHub
   workflow_dispatch:
 
-# Gives the workflow permissions to clone the repo and create a page deployment
-permissions:
-  id-token: write
-  pages: write
-
 env:
   # Name of module and id separated by a slash
   INSTANCE: Writerside/hi
@@ -76,7 +71,7 @@ jobs:
 
   deploy:
     environment:
-      name: github-pages
+      name: cloudflare-pages
       url: ${{ steps.deployment.outputs.page_url }}
     # Requires the build job results
     needs: test
@@ -90,14 +85,13 @@ jobs:
       - name: Unzip artifact
         run: unzip -O UTF-8 -qq ${{ env.ARTIFACT }} -d dir
 
-      - name: Setup Pages
-        uses: actions/configure-pages@v2
-
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
+      - name: Publish to Cloudflare Pages
+        uses: cloudflare/pages-action@1
         with:
-          path: dir
-
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v1
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: 24c5f441026daba8da2637ed4612d555
+          projectName: tempad-docs
+          directory: dir
+          branch: main
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+          wranglerVersion: '3'
